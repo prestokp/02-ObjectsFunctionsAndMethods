@@ -168,7 +168,34 @@ def try_functions():
     #    HINT: see   jump_and_move_turtle   above.
     ###########################################################################
     shotwell = rg.SimpleTurtle()
-    shotwell.
+    shotwell.jump_and_move_shotwell(200,100,300,30)
+    shotwell.pen = rg.Pen("Cyan", 5)
+    shotwell.pen_up()
+    shotwell.go_to(rg.Point(200,100,))
+    shotwell.pen_down()
+    shotwell.go_to(300,30)
+
+    gweyn = rg.SimpleTurtle()
+    gweyn.jump_and_move_gweyn(100,200,0,0)
+    gweyn.pen = rg.Pen("Green", 5)
+    gweyn.pen_up()
+    gweyn.go_to(rg.Point(100,200))
+    gweyn.pen_down()
+    gweyn.go_to(0,0)
+
+    musk = rg.SimpleTurtle()
+    musk.jump_and_move_gweyn(100, 200, 0, 0)
+    musk.pen = rg.Pen("Green", 5)
+    musk.pen_up()
+    musk.go_to(rg.Point(100, 200))
+    musk.pen_down()
+    musk.go_to(0, 0)
+    
+
+
+
+
+
 
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
