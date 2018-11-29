@@ -167,35 +167,9 @@ def try_functions():
     #    If you think it needs more, ** ASK FOR HELP. **
     #    HINT: see   jump_and_move_turtle   above.
     ###########################################################################
-    shotwell = rg.SimpleTurtle()
-    shotwell.jump_and_move_shotwell(200,100,300,30)
-    shotwell.pen = rg.Pen("Cyan", 5)
-    shotwell.pen_up()
-    shotwell.go_to(rg.Point(200,100,))
-    shotwell.pen_down()
-    shotwell.go_to(300,30)
-
-    gweyn = rg.SimpleTurtle()
-    gweyn.jump_and_move_gweyn(100,200,0,0)
-    gweyn.pen = rg.Pen("Green", 5)
-    gweyn.pen_up()
-    gweyn.go_to(rg.Point(100,200))
-    gweyn.pen_down()
-    gweyn.go_to(0,0)
-
-    musk = rg.SimpleTurtle()
-    musk.jump_and_move_gweyn(100, 200, 0, 0)
-    musk.pen = rg.Pen("Green", 5)
-    musk.pen_up()
-    musk.go_to(rg.Point(100, 200))
-    musk.pen_down()
-    musk.go_to(0, 0)
-    
-
-
-
-
-
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
 
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
@@ -240,6 +214,22 @@ def try_methods_and_functions():
     #     draw_many_squares
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     ###########################################################################
+
+    gweyn = rg.SimpleTurtle()
+    gweyn.pen = rg.Pen("Blue", 5)
+    gweyn.backward(150)
+    gweyn.speed = 1
+    draw_many_squares(gweyn, 2, 100, 30)
+    gweyn.speed = 5
+    gweyn.pen = rg.Pen("Red", 5)
+    draw_many_squares(gweyn, 10, 50, 15)
+    gweyn.speed = 100
+    gweyn.pen = rg.Pen("Red", 35)
+    draw_many_squares(gweyn,8,300,60)
+    gweyn.pen = rg.Pen("Black", 3)
+    gweyn.backward(200)
+    gweyn.draw_circle(30)
+    gweyn.draw_square(50)
 
 
 # -----------------------------------------------------------------------------
